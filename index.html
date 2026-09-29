@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Event Registration</title>
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header>
+        <h1>Annual College Fest 2026</h1>
+        <p>
+            Welcome to our Annual College Fest! Join us for exciting
+            cultural, technical, and sports activities.
+        </p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav>
+        <a href="#home">Home</a> |
+        <a href="#about">About Event</a> |
+        <a href="#schedule">Schedule</a> |
+        <a href="#registration">Registration</a>
+    </nav>
+
+    <main>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h2>Welcome to College Fest</h2>
+
+            <img
+                src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b"
+                alt="College Event"
+                width="600"
+            >
+
+            <p>
+                Our college is organizing an exciting annual event where
+                students can participate in various activities and
+                showcase their talents.
+            </p>
+        </section>
+
+        <!-- About Event Section -->
+        <section id="about">
+            <h2>About Event</h2>
+
+            <p>
+                The Annual College Fest provides students with an
+                opportunity to participate in technical, cultural,
+                creative, and entertainment activities.
+            </p>
+
+            <h3>Activities Included</h3>
+
+            <ul>
+                <li>Coding Competition</li>
+                <li>Quiz Competition</li>
+                <li>Dance Competition</li>
+                <li>Music Competition</li>
+                <li>Debate Competition</li>
+                <li>Sports Activities</li>
+            </ul>
+        </section>
+
+        <!-- Schedule Section -->
+        <section id="schedule">
+            <h2>Event Schedule</h2>
+
+            <table border="1" cellpadding="10">
+                <thead>
+                    <tr>
+                        <th>Event Name</th>
+                        <th>Date</th>
+                        <th>Time</th>
+                        <th>Venue</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Inauguration</td>
+                        <td>10 October 2026</td>
+                        <td>10:00 AM</td>
+                        <td>Main Auditorium</td>
+                    </tr>
+
+                    <tr>
+                        <td>Coding Competition</td>
+                        <td>10 October 2026</td>
+                        <td>12:00 PM</td>
+                        <td>Computer Lab</td>
+                    </tr>
+
+                    <tr>
+                        <td>Dance Competition</td>
+                        <td>11 October 2026</td>
+                        <td>2:00 PM</td>
+                        <td>College Ground</td>
+                    </tr>
+
+                    <tr>
+                        <td>Quiz Competition</td>
+                        <td>11 October 2026</td>
+                        <td>4:00 PM</td>
+                        <td>Seminar Hall</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="registration">
+            <h2>Event Registration Form</h2>
+
+            <form>
+
+                <!-- Full Name -->
+                <label for="fullname">Full Name:</label>
+                <br>
+                <input
+                    type="text"
+                    id="fullname"
+                    name="fullname"
+                    placeholder="Enter your full name"
+                    required
+                >
+                <br><br>
+
+                <!-- Email -->
+                <label for="email">Email:</label>
+                <br>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    required
+                >
+                <br><br>
+
+                <!-- Phone -->
+                <label for="phone">Phone Number:</label>
+                <br>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="Enter your phone number"
+                    required
+                >
+                <br><br>
+
+                <!-- Gender -->
+                <label>Gender:</label>
+                <br>
+
+                <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Male"
+                >
+                <label for="male">Male</label>
+
+                <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Female"
+                >
+                <label for="female">Female</label>
+
+                <input
+                    type="radio"
+                    id="other"
+                    name="gender"
+                    value="Other"
+                >
+                <label for="other">Other</label>
+
+                <br><br>
+
+                <!-- Course / Department -->
+                <label for="course">Course/Department:</label>
+                <br>
+
+                <select id="course" name="course" required>
+                    <option value="">-- Select Course --</option>
+                    <option value="MCA">MCA</option>
+                    <option value="BCA">BCA</option>
+                    <option value="BTech">B.Tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="BBA">BBA</option>
+                </select>
+
+                <br><br>
+
+                <!-- Event Selection -->
+                <label for="event">Select Event:</label>
+                <br>
+
+                <select id="event" name="event" required>
+                    <option value="">-- Select Event --</option>
+                    <option value="coding">Coding Competition</option>
+                    <option value="quiz">Quiz Competition</option>
+                    <option value="dance">Dance Competition</option>
+                    <option value="music">Music Competition</option>
+                    <option value="debate">Debate Competition</option>
+                    <option value="sports">Sports Activities</option>
+                </select>
+
+                <br><br>
+
+                <!-- Message / Comments -->
+                <label for="message">Message/Comments:</label>
+                <br>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    cols="40"
+                    placeholder="Enter your message or comments"
+                ></textarea>
+
+                <br><br>
+
+                <!-- Buttons -->
+                <input type="submit" value="Submit">
+                <input type="reset" value="Reset">
+
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2026 Annual College Fest | All Rights Reserved</p>
+        <p>Contact: collegeevent@example.com</p>
+    </footer>
+
+</body>
+</html>
